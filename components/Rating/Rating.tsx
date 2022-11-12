@@ -3,8 +3,7 @@ import { RatingProps } from './Rating.props';
 import styles from './Rating.module.css';
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
-import StarIcon from './star.svg';
-
+import RatingIcon from './star.svg'; 
 
 export const Rating = ({ isEditable = false, rating, setRating, ...props }: RatingProps): JSX.Element => {
 
@@ -18,13 +17,10 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
   const constructRating = (currentRating: number) => {
     const updatedArray = ratingArray.map((r: JSX.Element, i: number) => {
       return (
-        <StarIcon
-            className={cn(styles.star, {
-              [styles.filled]: i < currentRating
-          })}
-        
-        
-        />
+        <>
+          <RatingIcon className={styles.filled} />
+        </>
+    
       );
     });
     setRatingArray(updatedArray);
