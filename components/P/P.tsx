@@ -11,10 +11,9 @@ export const P = ({ size = 'm', children, className, ...props }: PProps): JSX.El
         [styles.m]: size == 'm',
         [styles.l]: size == 'l',
       })}
-      { ...props }
+      {...props}
     >
-      { children }
+      {children}
     </p>
   );
-
-}
+};
