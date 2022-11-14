@@ -17,16 +17,15 @@
 
 .footer__link {
     display: block;
-    margin-right: 40px;
+    margin-right: 5px;
 }
 
 .footer__link:last-child {
-    margin-right: 0;
+    margi
 }
 
 @media (max-width: 765px) {
     .footer {
         grid-template-columns: 1fr;
-        font-size: 12px;
     }
 }

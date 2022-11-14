@@ -26,7 +26,6 @@
 
 @media (max-width: 765px) {
     .footer {
-        grid-template-columns: 1fr;
-        font-size: 12px;
+        grid-template-columns: 2fr 1fr;
     }
 }
